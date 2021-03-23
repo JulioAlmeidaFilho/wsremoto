@@ -1,0 +1,14 @@
+package br.com.gama.implementacao;
+
+public class TesteCliente {
+	
+	
+	public static void main(String[] args) {
+		
+		PessoaFisica pf = nem PessoaFisica();
+		
+		
+		
+	}
+
+}

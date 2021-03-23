@@ -1,0 +1,37 @@
+package br.com.gama.implementacao;
+
+import javax.swing.JOptionPane;
+
+import br.com.gama.modelo.Aluno;
+
+public class TesteAluno {
+	
+	
+	public static void main(String[] args) {
+		
+		Aluno aluno = new Aluno();
+		
+		aluno.setEmail(JOptionPane.showInputDialog("Email").toLowerCase());
+		aluno.setFone(JOptionPane.showInputDialog("Fone"));
+		aluno.setNome(JOptionPane.showInputDialog("Nome").toUpperCase());
+		aluno.setMatricula(Integer.parseInt(JOptionPane.showInputDialog("Matricula")));
+		
+		System.out.println(aluno.toString());
+		}
+	
+		Aluno aluno2 = new Aluno();
+	
+		aluno2.setAll(
+				JOptionPane.showInputDialog("Nome 2").toUpperCase(),
+				Integer.parseInt(JOptionPane.showInputDialog("Matricula 2")),
+				JOptionPane.showInputDialog("Email").toLowerCase(),
+				JOptionPane.showInputDialog("Fone")
+				);
+	
+	
+	
+	
+	
+	
+
+}

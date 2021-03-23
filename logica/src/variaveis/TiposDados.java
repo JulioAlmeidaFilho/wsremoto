@@ -1,0 +1,66 @@
+package variaveis;
+
+public class TiposDados {
+
+	// JAVA é Orientada a Objeto
+	// POG é Programação orientada a gambiarra
+
+	/*
+	 * Tipos de Dados: Alfanuméricos: é um dado que NÃO será utilizado em calculo
+	 * matematico (contexto DP Itaú) CEP => 00010-009 => 00010-009 String (Javanês)
+	 * 
+	 * Numéricos: é um dado que pode ser utilizado em um calculo matemático e/ou for
+	 * considerado um dado critico pro sistema. (contexto Correios) CEP => 00010-009
+	 * => 1 - com casas decimais: double - sem casas decimais: int
+	 * 
+	 * Variavel: é um espaço temporário para armazenar um dado
+	 *
+	 * Sintaxe <tipo do dado> <nome da variavel> = <valor/dado>;
+	 * 
+	 * Exemplo: String marca = "SAMSUNG";
+	 */
+
+	// main() é o Start Point da App
+
+	public static void main(String[] args) {
+
+		System.out.println("Hello World!");
+		
+		String nome = "Julio Almeida";
+		int idade = 32;
+		double altura = 1.80;
+		double peso = 91.80;
+		double imc = peso / (altura * altura);
+		
+		System.out.println("Nome: "+nome);
+		System.out.println("Idade: "+idade);
+		System.out.println("Altura: "+altura);
+		
+		System.out.printf("\nOlá %s seu IMC é %.2f.", nome, imc);
+		
+		
+		/* Nivel da Linguagem:
+		 * Alto Nivel: mais simples para o aprendizado, pq está mais próximo da linguagem humana.
+		 * Baixo Nivel: mais completo e mais próximo da linguagem de máquina.
+		 * 
+		 * Caracteristicas fisicas/comportamentais:
+		 * - não é fitness
+		 * - não sociavel
+		 * - nerd
+		 * - careca / oculos
+		 * Perfil: +-1995
+		 * Paradigma: Estruturada (C, Cobol, Clipper, Basic...)
+		 * Tempo era um problema, projetos levavam 6 meses, 1 ano...
+		 * Metodologia ágil => Paradigma orientado a objeto (POO)
+		 * 
+		 * Siglas do Java
+		 * JDK - Java Development Kit --> Ferramenta para desenvolvedor
+		 * 		JRE - Java Runtime Environment ==> Responsável por executar toda a aplicação.
+		 * 			JVM - Java Virtual Machine (O que faz em qualquer maquina funciona, roda aqui)
+		 */
+		
+		
+
+	}
+
+}

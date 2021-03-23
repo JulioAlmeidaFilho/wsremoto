@@ -1,0 +1,34 @@
+package br.com.rubinhocar.modelo;
+
+public class Veiculo {
+	
+	//- representa private
+	//+ representa public
+		
+	private String montadora;
+	private float valor;
+	private short velocidadeAtual;
+	private boolean status;
+	private short velocidadeMaxima;
+	private String modelo;
+	
+	//sintaxe dos metados
+	// <modificador> <tipo do retorno> <nome do metodo> (<tipo parametro><nome parametro>...){
+	
+	
+	public String retornarMontadora() {
+		
+		return montadora;
+		
+	}
+	
+	
+	public void preencherMontadora(String param) {
+		
+		montadora = param;
+		
+		
+		
+	}
+	
+}

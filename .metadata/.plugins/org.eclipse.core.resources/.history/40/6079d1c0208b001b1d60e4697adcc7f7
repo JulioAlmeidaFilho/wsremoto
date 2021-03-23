@@ -1,0 +1,30 @@
+package br.com.lojaxpto.implementacao;
+
+import br.com.lojasxpto.modelo.Cliente;
+import br.com.lojasxpto.modelo.Produto;
+import br.com.lojasxpto.modelo.Venda;
+
+public class TesteVenda {
+	
+	public static void main(String[] args) {
+		
+		
+		Venda venda = new Venda(
+				12345,
+				(float)20.52,
+				new Cliente(),
+				new Produto()				
+				);
+				
+		
+		System.out.println(venda.getNome());
+		
+		
+		
+		
+		
+		
+		
+	}
+
+}

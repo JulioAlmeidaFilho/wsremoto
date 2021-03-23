@@ -1,0 +1,18 @@
+package br.com.lojasxpto.modelo;
+
+public class Produto {
+	
+	private int id;
+	private String descricao;
+	private Fabricante fabricante;
+	private float valorVenda;
+	private float valorCompra;
+	private int qtde;
+	
+	
+	
+	
+	
+	
+
+}

@@ -1,0 +1,5 @@
+package br.com.lojasxpto.modelo;
+
+public class Produto {
+
+}

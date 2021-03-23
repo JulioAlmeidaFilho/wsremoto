@@ -1,0 +1,16 @@
+package br.com.gama.modelo;
+
+public class Curso {
+	
+	private String sigla;
+	private String descricao;
+	private boolean ativo;
+	private float valor;
+	private byte duracao;
+	
+	
+	
+	
+	
+
+}

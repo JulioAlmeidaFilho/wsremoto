@@ -1,0 +1,52 @@
+package decisao;
+
+import javax.swing.JOptionPane;
+
+public class DecisaoEncadeada {
+
+	
+	public static void main(String[] args) {
+		
+		/*
+		 * Capturar
+		 * - Nome da Disciplina
+		 * - Nota 1
+		 * - Nota 2
+		 * No final exibir a média entre as duas notas
+		 * Exibir parabéns somente se a média for maior ou igual a 6
+		 * 
+		 * FASE 2
+		 * Capturar as faltas
+		 * e aprovar somente se as fatas forem menor que 20
+		 * O mesmo vale para o exame
+		 */
+		
+		String nome = 	JOptionPane.showInputDialog("Nome da Disciplina").toUpperCase();
+		float nota1 = Float.parseFloat(JOptionPane.showInputDialog("Digite a nota 1"));
+		float nota2 = Float.parseFloat(JOptionPane.showInputDialog("Digite a nota 2"));
+		int faltas = Integer.parseInt(JOptionPane.showInputDialog("Digite a quantidade de faltas"));
+		float media = (nota1 + nota2)/2;
+				
+		System.out.println("Sua média foi de: "+media);
+		
+		if (faltas < 20) {
+		
+		if (media>=6) {
+		System.out.println("PARABÉNS");
+		}
+		else if (media>4) {
+		System.out.println("Exame");
+		}
+		
+		}else {
+			System.out.println("Infelizmente você foi reprovado!");
+		}
+		
+		
+		
+		
+		
+		
+		
+	}
+}

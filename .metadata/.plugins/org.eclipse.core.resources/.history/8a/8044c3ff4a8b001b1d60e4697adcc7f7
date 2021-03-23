@@ -1,0 +1,21 @@
+package br.com.bankofoz.implementacao;
+
+import br.com.bankofoz.modelo.Conta;
+import br.com.bankofoz.modelo.Help;
+
+public class TesteConta {
+
+	public static void main(String[] args) {
+		
+		Conta conta = new Conta();
+		
+		if ( Help.s("Digite <CC> para conta corrente e <CP> para conta poupança").equals("CC")) {
+		
+		}
+		
+		
+		
+		
+		
+	}
+}

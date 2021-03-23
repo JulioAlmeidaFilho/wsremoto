@@ -1,0 +1,67 @@
+package variaveis;
+
+import javax.swing.JOptionPane;
+
+//swing em JAVA classes necessárias para Telas JAVA Nativas
+
+public class TiposPrimitivos {
+	
+	public static void main(String[] args) {
+		
+		/*
+		 * Regras para identificadores (nomes de variavel, classe...):
+		 * 1º Não usarás palavras reservadas da linguagem
+		 * 2º Não começaras com números.
+		 * 3º Não utilizarás caracteres especiais (@,#,*...)
+		 * 
+		 * Padrões para identificadores:
+		 * 1º Use nomes significativos
+		 * 2º Use o padrão CamelCase
+		 * Exemplo: data_nascimento, dataNascimento
+		 * 3º Variaveis/métodos começam com letra minuscula
+		 * 4º Classes começam com letra maiscula
+		 * Exemplo:
+		 * xpto() => é um método
+		 * xpto => é uma variável
+		 * Xpto => é uma classe
+		 */
+		
+		
+		String time1 = JOptionPane.showInputDialog("Digite o time 1");
+		String time2 = "XPTO";
+		double entrada=100.0;
+		int publico =15000;
+		double total = entrada * publico;
+		
+		System.out.printf("No jogo entre %s x %s, a arrecadação foi de: R$ %.2f.",time1,time2,total);
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+
+}

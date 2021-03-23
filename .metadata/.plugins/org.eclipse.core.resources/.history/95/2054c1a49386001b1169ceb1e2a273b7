@@ -1,0 +1,64 @@
+package repeticao;
+
+import javax.swing.JOptionPane;
+
+public class ExercicioRepeticao2 {
+
+	public static void main(String[] args) {
+		/*
+		 * Monte um programa que solicite a idade e o nome das pessoas. 
+		A aplicação continuará perguntando nome e idade enquanto o usuário afirmar que deseja continuar.
+		Ao terminar, a aplicação deverá exibir:
+		- a quantidade de pessoas maiores de idade e 
+		- a média entre todas as idades que foram digitadas. 
+		- a pessoa mais experiente (nome e idade)
+		- a pessoa mais jovem (nome e idade)
+		 */
+
+		String nome = "" ;
+		short idade = 0;
+		int qtdeMaiorIdade = 0;
+		int somaIdades = 0;
+		int qtdeTotal = 0;;
+		String nomeMaiorIdade = "";
+		String nomeMenorIdade = "";
+		short maiorIdade = 0;
+		short menorIdade = 999;
+		String fim = "";
+		
+		do {
+			nome = JOptionPane.showInputDialog("Qual o nome?");
+			idade = Short.parseShort(JOptionPane.showInputDialog("Qual a idade?"));
+			
+			//Verifica maiores de idade
+			if (idade>=18) {
+				qtdeMaiorIdade = qtdeMaiorIdade +1;
+			}  
+			
+			//Pega os componentes para média
+			somaIdades = somaIdades + idade;
+			qtdeTotal = qtdeTotal + 1;
+			
+			if (idade > maiorIdade) {
+				maiorIdade = idade;
+				nomeMaiorIdade = nome;		
+			}
+			
+			if (idade < menorIdade) {
+				menorIdade = idade;
+				nomeMenorIdade = nome;		
+			}
+			
+			fim = JOptionPane.showInputDialog("Digite <s> para continuar.");
+			
+		}while (fim.contains("s")==true);
+		
+		System.out.println("A quantidade de pessoas maiores de idade é: "+qtdeMaiorIdade);
+		System.out.println("A média entre todas as idades que foram digitadas é: "+(somaIdades/qtdeTotal));
+		System.out.printf("\nA pessoa mais experiente (nome e idade): %s com %d anos.", nomeMaiorIdade, maiorIdade);
+		System.out.printf("\nA pessoa mais jovem (nome e idade): %s com %d anos.", nomeMenorIdade, menorIdade);
+		
+		
+	}
+		
+}

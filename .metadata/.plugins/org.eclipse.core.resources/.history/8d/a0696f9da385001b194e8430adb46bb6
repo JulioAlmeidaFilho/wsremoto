@@ -1,0 +1,31 @@
+package variaveis;
+
+public class TiposDados {
+
+	// JAVA é Orientada a Objeto
+	// POG é Programação orientada a gambiarra
+
+	/*
+	 * Tipos de Dados: Alfanuméricos: é um dado que NÃO será utilizado em calculo
+	 * matematico (contexto DP Itaú) CEP => 00010-009 => 00010-009 String (Javanês)
+	 * 
+	 * Numéricos: é um dado que pode ser utilizado em um calculo matemático e/ou for
+	 * considerado um dado critico pro sistema. (contexto Correios) CEP => 00010-009
+	 * => 1 - com casas decimais: double - sem casas decimais: int
+	 * 
+	 * Variavel: é um espaço temporário para armazenar um dado
+	 *
+	 * Sintaxe <tipo do dado> <nome da variavel> = <valor/dado>;
+	 * 
+	 * Exemplo: String marca = "SAMSUNG";
+	 */
+
+	// main() é o Start Point da App
+
+	public static void main(String[] args) {
+
+		System.out.print("Hello World!");
+
+	}
+
+}

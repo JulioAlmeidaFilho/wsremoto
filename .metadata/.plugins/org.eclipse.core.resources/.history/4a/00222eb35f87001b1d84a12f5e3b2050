@@ -1,0 +1,30 @@
+package br.com.caicai.teste;
+
+import br.com.caicai.modelo.Elevador;
+
+public class TesteElevador {
+	
+	public static void main(String[] args) {
+		
+		
+		Elevador n1 = new Elevador();
+		
+		n1.inicializar("casa", (byte)8, (byte)5, (byte)0);
+		
+		System.out.println(n1.toString());
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+
+}
